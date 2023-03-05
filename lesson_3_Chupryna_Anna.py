@@ -6,9 +6,9 @@ import random
 number = random.randint(0, 59)
 if number <= 15:
     print(f"Число {number} в першій чверті")
-elif 15 < number <= 30:
+elif number <= 30:
     print(f"Число {number} в другій чверті")
-elif 30 < number <= 45:
+elif number <= 45:
     print(f"Число {number} в третій чверті")
 else:
     print(f"Число {number} в четвертій чверті")
@@ -18,9 +18,7 @@ else:
 birth_month = int(input("Введіть місяць свого народження: "))
 if birth_month < 0 or birth_month > 12:
     print("Ви вводите некоректні дані. Введіть місяць в форматі числа (без нуля).")
-elif 0 < birth_month <= 2:
-    print("За вікном падав сніг.")
-elif birth_month == 12:
+elif 0 < birth_month <= 2 or birth_month == 12:
     print("За вікном падав сніг.")
 elif 6 > birth_month >= 3:
     print("Все довкола розцвітало.")
@@ -46,25 +44,25 @@ if last_digit % 2 == 0:
 else:
     print(f"{number} не ділиться на 6")
 
-# Задача 4.
+#Задача 4
 
-a = float(input("Enter x: \n"))
-b = float(input("Enter y: \n"))
+x = float(input("Enter x: \n"))
+y = float(input("Enter y: \n"))
 
-if a == 0:
-    if b == 0:
+if x == 0:
+    if y == 0:
         print("Coordinates 0, 0")
     else:
-        print(f"Coordinates 0, {b}")
+        print(f"Coordinates 0, {y}")
 else:
-    if b == 0:
-        print(f"Coordinates {a}, 0")
+    if y == 0:
+        print(f"Coordinates {x}, 0")
     else:
-        if a > 0 and b > 0:
+        if x > 0 and y > 0:
             print("Coordinates belong to I quarter")
-        elif a < 0 and b < 0:
+        elif x < 0 and y < 0:
             print("Coordinates belong to III quarter")
-        elif a > 0 > b:
+        elif x > 0 > y:
             print("Coordinates belong to IV quarter")
         else:
             print("Coordinates belong to II quarter")

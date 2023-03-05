@@ -195,32 +195,95 @@
 # # print(f"hello {names_dict.get(user_input, 'all')}")
 
 # Отсортируйте словарь по значению в порядке возрастания и убывания.
-dict_1 = {"Maria": 1,
-          "Ivan": 10,
-          "Olena": 4,
-          "Lolo": 45,
-          "Ui": 6
-}
-dict_1_copy = sorted(dict_1.values())
-print(dict_1_copy)
-sorted_dict = {}
-# для каждого элемента с списке значений
-for el in dict_1_copy:
-    # для каждого ключа в словаре
-    for key in dict_1.keys():
-        # сравниваем равно ли значение по ключу в словаре элементу
-        if dict_1[key] == el:
-            sorted_dict[key] = dict_1[key]
-print(sorted_dict)
+# dict_1 = {"Maria": 1,
+#           "Ivan": 10,
+#           "Olena": 4,
+#           "Lolo": 45,
+#           "Ui": 6
+# }
+# dict_1_copy = sorted(dict_1.values())
+# print(dict_1_copy)
+# sorted_dict = {}
+# # для каждого элемента с списке значений
+# for el in dict_1_copy:
+#     # для каждого ключа в словаре
+#     for key in dict_1.keys():
+#         # сравниваем равно ли значение по ключу в словаре элементу
+#         if dict_1[key] == el:
+#             sorted_dict[key] = dict_1[key]
+# print(sorted_dict)
+#
+# dict_1_copy = sorted(dict_1.values(), reverse=True)
+# print(dict_1_copy)
+# sorted_dict = {}
+# # для каждого элемента с списке значений
+# for el in dict_1_copy:
+#     # для каждого ключа в словаре
+#     for key in dict_1.keys():
+#         # сравниваем равно ли значение по ключу в словаре элементу
+#         if dict_1[key] == el:
+#             sorted_dict[key] = dict_1[key]
+# print(sorted_dict)
 
-dict_1_copy = sorted(dict_1.values(), reverse=True)
-print(dict_1_copy)
-sorted_dict = {}
-# для каждого элемента с списке значений
-for el in dict_1_copy:
-    # для каждого ключа в словаре
-    for key in dict_1.keys():
-        # сравниваем равно ли значение по ключу в словаре элементу
-        if dict_1[key] == el:
-            sorted_dict[key] = dict_1[key]
-print(sorted_dict)
+# list1=[2,4,6,8,10]
+# print(list1[-2])
+#
+# list2 = [17,23,41,10]
+# list2.append(32)
+# print(list2)
+#
+# setA={3,6,9}
+# setB={1,3,9}
+# print(setA|setB)
+#
+# a=[1,2,3,4,5,6,7,8,9]
+#
+# print(a[::2])
+# a=[1,2,3,4,5,6,7,8,9]
+# arr = [[1, 2, 3, 4],
+# [4, 5, 6, 7],
+# [8, 9, 10, 11],
+# [12, 13, 14, 15]]
+# for i in range(0, 4):
+#     print(arr[i].pop())
+#
+# print(a[::2])
+# init_tuple = (1,) * 3
+#
+# init_tuple[0] = 2
+#
+# print(init_tuple)
+# init_tuple = ((1, 2),) * 7
+# print(len(init_tuple[3:8]))
+
+# a = {(1,2):1,(2,3):2}
+# print(a[1,2])
+
+# a = {'a':1,'b':2,'c':3}
+# print (a['a','b'])
+
+# arr = {}
+# arr[1] = 1
+# arr['1'] = 2
+# arr[1] += 1
+# sum = 0
+# for k in arr:
+#     sum += arr[k]
+# print (sum)
+# my_dict = {}
+# my_dict[1] = 1
+# my_dict['1'] = 2
+# my_dict[1.0] = 4
+# sum = 0
+# for k in my_dict:
+#     sum += my_dict[k]
+# print(sum)
+my_dict = {}
+my_dict[(1,2,4)] = 8
+my_dict[(4,2,1)] = 10
+my_dict[(1,2)] = 12
+sum = 0
+for k in my_dict:
+    sum += my_dict[k]
+print (sum)
+print(my_dict)

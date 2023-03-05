@@ -22,6 +22,7 @@ for student in students_score.keys():
 # Задача 3
 number_list = [1, 1, 3, 3, 4, 1, 1, 2, 3, 4, 4, 4, 5, 6, 8, 9, 7, 7, 6, 5]
 value_count = len(set(number_list))
+value_count_1 = set(number_list)
 print(value_count)
 
 # Задача 4
